@@ -1,0 +1,16 @@
+# Big / regenerable data stays OUT of git (re-download or re-run the pipeline)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Tracked on purpose: data/sample/ and data/aggregated/ (what the dashboard reads)
+
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.duckdb
+*.part
+.env
