@@ -1,4 +1,4 @@
-# MetaLens: game analytics at scale on the Lichess open database
+#   chess-ed: game analytics at scale on the Lichess open database
 
 A streaming, parallel data pipeline over Lichess monthly dumps, producing partitioned
 Parquet plus game-analytics insights (opening meta shift, matchmaking fairness,
