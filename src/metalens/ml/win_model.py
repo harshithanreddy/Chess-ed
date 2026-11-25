@@ -11,20 +11,19 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from ..paths import AGG_DIR
-
 import numpy as np
 import pandas as pd
 
+from ..paths import AGG_DIR
 from .features import FEATURE_COLUMNS, LABEL_COLUMN, load_win_dataset, time_based_split
 
 
 def _baseline_logloss_acc(train: pd.DataFrame, test: pd.DataFrame):
+    from sklearn.compose import ColumnTransformer
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import accuracy_score, log_loss
-    from sklearn.preprocessing import OneHotEncoder, StandardScaler
-    from sklearn.compose import ColumnTransformer
     from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
     numeric = ["white_elo", "black_elo", "rating_diff", "avg_elo", "base_seconds", "increment_seconds"]
     pre = ColumnTransformer([

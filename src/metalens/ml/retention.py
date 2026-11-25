@@ -18,10 +18,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from ..paths import AGG_DIR
-
 import numpy as np
 import pandas as pd
+
+from ..paths import AGG_DIR
 
 
 def _available_months(con) -> list[str]:
@@ -119,7 +119,7 @@ def train_and_evaluate(con, feature_month: str, label_month: str | None = None,
                        speed: str = "blitz", out_dir: Path | None = None,
                        shap_sample_size: int = 5000) -> dict:
     import lightgbm as lgb
-    from sklearn.metrics import roc_auc_score, average_precision_score
+    from sklearn.metrics import average_precision_score, roc_auc_score
     from sklearn.model_selection import train_test_split
 
     df = build_player_month_features(con, feature_month, label_month, speed)

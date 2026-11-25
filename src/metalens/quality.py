@@ -42,11 +42,11 @@ def _checks(month: str) -> list[tuple[str, str, str]]:
         ("invalid_result", "error",
          "SELECT count(*) FROM games WHERE result NOT IN ('1-0','0-1','1/2-1/2')"),
         ("score_result_mismatch", "error",
-         "SELECT count(*) FROM games WHERE white_score <> "
-         "CASE result WHEN '1-0' THEN 1.0 WHEN '0-1' THEN 0.0 ELSE 0.5 END"),
+         ("SELECT count(*) FROM games WHERE white_score <> "
+         "CASE result WHEN '1-0' THEN 1.0 WHEN '0-1' THEN 0.0 ELSE 0.5 END")),
         ("elo_out_of_range", "error",
-         "SELECT count(*) FROM games WHERE white_elo < 100 OR white_elo > 4000 "
-         "OR black_elo < 100 OR black_elo > 4000"),
+         ("SELECT count(*) FROM games WHERE white_elo < 100 OR white_elo > 4000 "
+         "OR black_elo < 100 OR black_elo > 4000")),
         ("negative_ply_count", "error", "SELECT count(*) FROM games WHERE ply_count < 0"),
         ("date_outside_month", "warn",
          f"SELECT count(*) FROM games WHERE strftime(played_at, '%Y-%m') <> '{month}'"),
