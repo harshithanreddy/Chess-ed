@@ -2,8 +2,8 @@
   "games": 20000,
   "python": "3.11.9",
   "games_per_sec": {
-    "metalens_parser_1proc": 39439.8,
-    "python_chess_read_game": 5828.5,
-    "python_chess_headers_only": 29471.4
+    "metalens_parser_1proc": 35174.6,
+    "python_chess_read_game": 6214.2,
+    "python_chess_headers_only": 31256.5
   }
 }

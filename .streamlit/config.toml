@@ -1,0 +1,10 @@
+# Dark, warm-accented theme inspired by the project's chess-art references:
+# deep navy/black base, rust/ochre accent, cream text.
+# Users can still override via Streamlit's own Settings menu if they prefer.
+[theme]
+base = "dark"
+primaryColor = "#c97c3d"
+backgroundColor = "#11151c"
+secondaryBackgroundColor = "#1c2430"
+textColor = "#eee6da"
+font = "serif"

@@ -1,0 +1,66 @@
+{
+  "month": "2016-01",
+  "checks": [
+    {
+      "name": "null_game_id",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "duplicate_game_ids",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "invalid_result",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "score_result_mismatch",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "elo_out_of_range",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "negative_ply_count",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "date_outside_month",
+      "severity": "warn",
+      "violations": 5124
+    },
+    {
+      "name": "negative_clock_value",
+      "severity": "warn",
+      "violations": 0
+    },
+    {
+      "name": "unknown_speed",
+      "severity": "warn",
+      "violations": 0
+    },
+    {
+      "name": "zero_move_games",
+      "severity": "warn",
+      "violations": 14496
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "date_outside_month: 5,124 rows",
+    "zero_move_games: 14,496 rows"
+  ],
+  "rows": 4770357,
+  "manifest_rows": 4770357,
+  "quarantine_ratio": 0.0,
+  "sample_rows": 100000,
+  "contract": "passed",
+  "status": "passed"
+}

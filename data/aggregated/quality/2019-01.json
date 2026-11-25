@@ -1,0 +1,69 @@
+{
+  "month": "2019-01",
+  "checks": [
+    {
+      "name": "null_game_id",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "duplicate_game_ids",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "invalid_result",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "score_result_mismatch",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "elo_out_of_range",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "negative_ply_count",
+      "severity": "error",
+      "violations": 0
+    },
+    {
+      "name": "date_outside_month",
+      "severity": "warn",
+      "violations": 36152
+    },
+    {
+      "name": "negative_clock_value",
+      "severity": "warn",
+      "violations": 0
+    },
+    {
+      "name": "unknown_speed",
+      "severity": "warn",
+      "violations": 0
+    },
+    {
+      "name": "zero_move_games",
+      "severity": "warn",
+      "violations": 51805
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "date_outside_month: 36,152 rows",
+    "zero_move_games: 51,805 rows"
+  ],
+  "rows": 33869108,
+  "manifest_rows": 33869108,
+  "quarantine_ratio": 0.000525,
+  "quarantine_reasons": {
+    "bad_result": 17791
+  },
+  "sample_rows": 100000,
+  "contract": "passed",
+  "status": "passed"
+}

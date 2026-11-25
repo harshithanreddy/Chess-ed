@@ -1,5 +1,4 @@
 """End-to-end: needs pyarrow + zstandard (pip install -e .[dev])."""
-import json
 import tempfile
 import unittest
 from pathlib import Path

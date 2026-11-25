@@ -1,0 +1,60 @@
+{
+  "feature_month": "2024-01",
+  "label_month": "2024-02",
+  "n_players": 1441653,
+  "base_rate_returned": 0.7677,
+  "auc": 0.8189,
+  "average_precision": 0.9389,
+  "feature_importance": {
+    "n_games": 1332,
+    "n_active_days": 1139,
+    "avg_elo": 1639,
+    "rating_change": 1510,
+    "net_rating_diff": 1611,
+    "win_rate": 1093,
+    "rated_share": 235,
+    "max_loss_streak": 441
+  },
+  "shap_importance": {
+    "n_active_days": {
+      "mean_abs_shap": 1.57257,
+      "correlation": 0.987,
+      "direction": "higher -> more likely to return"
+    },
+    "n_games": {
+      "mean_abs_shap": 0.18662,
+      "correlation": -0.817,
+      "direction": "higher -> less likely to return"
+    },
+    "net_rating_diff": {
+      "mean_abs_shap": 0.12866,
+      "correlation": 0.231,
+      "direction": "higher -> more likely to return"
+    },
+    "avg_elo": {
+      "mean_abs_shap": 0.12473,
+      "correlation": 0.878,
+      "direction": "higher -> more likely to return"
+    },
+    "rating_change": {
+      "mean_abs_shap": 0.0945,
+      "correlation": -0.048,
+      "direction": "higher -> less likely to return"
+    },
+    "max_loss_streak": {
+      "mean_abs_shap": 0.05077,
+      "correlation": 0.28,
+      "direction": "higher -> more likely to return"
+    },
+    "win_rate": {
+      "mean_abs_shap": 0.03791,
+      "correlation": 0.567,
+      "direction": "higher -> more likely to return"
+    },
+    "rated_share": {
+      "mean_abs_shap": 0.01127,
+      "correlation": -0.72,
+      "direction": "higher -> less likely to return"
+    }
+  }
+}
