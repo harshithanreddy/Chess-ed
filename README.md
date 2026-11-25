@@ -101,7 +101,7 @@ All paths come from `src/metalens/paths.py`, anchored to the repo root. A test
 - [x] Week 2: Prefect orchestration, Pandera checks, Dockerfile
 - [x] Week 3: DuckDB analytics (meta shift, matchmaking, time pressure)
 - [x] Week 4: ML models (win probability, retention + SHAP), themed Streamlit dashboard
-- [ ] Deploy to Streamlit Community Cloud
+- [x] Deploy to Streamlit Community Cloud
 
 ## ML models
 
@@ -136,7 +136,7 @@ header banner) and `dashboard/charts.py` (themed Altair charts replacing Streaml
 default palette); `.streamlit/config.toml` sets the base theme and must be committed
 for a deployed app to pick it up.
 
-**Live app:** _not yet deployed -- add the link here once deployment is complete._
+**Live app:** https://chess-ed.streamlit.app/ 
 
 ## Diagnostics
 
